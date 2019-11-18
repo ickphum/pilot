@@ -1,0 +1,36 @@
+Notes on AWS and React: Creating Full-Stack Apps
+
+Install node & npm via apt.
+
+Had to install npx via "sudo i -g npx"
+
+npm version was too old so installed new version with "sudo npm install npm@latest -g" 
+and removed apt version
+
+  850  sudo npm install -g @aws-amplify/cli
+
+got some warnings which looked bad re node version but not upgrading til
+problems emerge.
+
+  852  amplify configure
+  853  amplify init
+  854  amplify hosting add
+  855  amplify publish
+
+
+Amplify access key ID AKIAVMEHLG6URAEOSEVY
+Amplify secret access ID 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
+
+http://todo-20191117142551-hostingbucket-todo.s3-website-ap-southeast-2.amazonaws.com/
+
+Look up courses on IAM, Cognito identity pools, identity providers, etc
+
+A pool has 2 roles, authed and unauthed; each role has its own permissions.
+
+We're using the user pool identity provider, ie users + passwords. Other providers 
+are google, facebook, etc. Identity providers give authenticated users access to the identity pool.
+
+  858  amplify add auth
+  860  amplify push
+
+Check difference between push and publish; push is config only?
