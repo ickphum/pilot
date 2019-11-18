@@ -18,19 +18,19 @@ problems emerge.
   855  amplify publish
 
 
-Amplify access key ID AKIAVMEHLG6URAEOSEVY
-Amplify secret access ID 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
+
 
 http://todo-20191117142551-hostingbucket-todo.s3-website-ap-southeast-2.amazonaws.com/
 
 Look up courses on IAM, Cognito identity pools, identity providers, etc
 
-A pool has 2 roles, authed and unauthed; each role has its own permissions.
+An identity pool has 2 roles (and maybe more?), authed and unauthed; each role has its own permissions.
 
 We're using the user pool identity provider, ie users + passwords. Other providers 
-are google, facebook, etc. Identity providers give authenticated users access to the identity pool.
+are google, facebook, etc. Identity providers give authenticated users access to the identity pool, which in turn allows permissions based on the role (authed or unauthed).
 
   858  amplify add auth
   860  amplify push
 
-Check difference between push and publish; push is config only?
+Check difference between push and publish; push builds local backend resources and provisions to cloud, publish does backend and frontend.
+
