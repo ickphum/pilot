@@ -1,0 +1,14 @@
+{
+    "trigger": true,
+    "modules": [
+        "verification-link"
+    ],
+    "parentResource": "todof5c436e0",
+    "functionName": "todof5c436e0CustomMessage",
+    "parentStack": "auth",
+    "triggerEnvs": "[{\"key\":\"RESOURCENAME\",\"value\":\"resourceName\"}]",
+    "triggerTemplate": "CustomMessage.json.ejs",
+    "roleName": "todof5c436e0CustomMessage",
+    "skipEdit": true,
+    "resourceName": "todof5c436e0CustomMessage"
+}
